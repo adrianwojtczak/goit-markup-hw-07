@@ -1,0 +1,811 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <!--metadane-->
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Zadanie domowe dla studentów #6</title>
+
+        <!--Google fonts START-->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+            rel="stylesheet"
+        />
+        <!--google fonts END-->
+
+        <link href="./css/modern-normalize.css" rel="stylesheet" />
+        <link href="./css/styles.css" rel="stylesheet" />
+    </head>
+    <body>
+        <header class="header">
+            <div class="container flexbox flexbox-header">
+                <!--menu-->
+                <div class="flexbox flexbox-header">
+                    <p class="logo logo-header">
+                        <span class="logo-blue">Web</span>Studio
+                    </p>
+                    <nav>
+                        <!--Menu nav-->
+                        <ul
+                            class="nav-menu-header list-no-marker flexbox flexbox-header"
+                        >
+                            <li>
+                                <a class="active current-page" href="index.html"
+                                    >Agencja</a
+                                >
+                            </li>
+                            <li>
+                                <a class="active" href="portfolio.html"
+                                    >Portfolio</a
+                                >
+                            </li>
+                            <li><a class="active" href="">Kontakt</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="flexbox flexbox-header flexbox-header-contact">
+                    <div>
+                        <a
+                            class="contact active flexbox flexbox-contact"
+                            href="mailto:info@devstudio.com"
+                            ><svg width="16" height="12">
+                                <use
+                                    href="./images/icons.svg#icon-envelope"
+                                ></use>
+                            </svg>
+                            info@devstudio.com</a
+                        >
+                    </div>
+                    <div>
+                        <a
+                            class="contact active flexbox flexbox-contact"
+                            href="tel:+48111111111"
+                            ><svg width="10" height="16">
+                                <use
+                                    href="./images/icons.svg#icon-smartphone"
+                                ></use>
+                            </svg>
+                            +48 111 111 111</a
+                        >
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main>
+            <section class="section hero-section bg-hero">
+                <!--nagłówek z przyciskiem-->
+                <div class="container flexbox flexbox-column">
+                    <h1 class="section-header header-main">
+                        Efektywne rozwiązania dla waszego biznesu
+                    </h1>
+                    <button
+                        data-modal-open
+                        type="button"
+                        class="button button-main"
+                    >
+                        Zamów usługe
+                    </button>
+                </div>
+            </section>
+            <section class="section section-our-strengths">
+                <div class="container">
+                    <ul class="list-no-marker flexbox">
+                        <!--nasze atrybuty-->
+                        <li class="section-our-strengths-items">
+                            <div class="section-our-strengths-icons flexbox">
+                                <svg width="70" height="70">
+                                    <use
+                                        href="./images/icons.svg#icon-antenna"
+                                    ></use>
+                                </svg>
+                            </div>
+                            <h3 class="section-our-strengths-header">
+                                Lorem ipsum
+                            </h3>
+                            <p class="section-our-strengths-content">
+                                Lorem ipsum dolor sit amet, consectetur
+                                adipiscing elit. Nam vel arcu sem. Sed non
+                                sodales dui. Interdum et malesuada
+                            </p>
+                        </li>
+                        <li class="section-our-strengths-items">
+                            <div class="section-our-strengths-icons flexbox">
+                                <svg width="70" height="70">
+                                    <use
+                                        href="./images/icons.svg#icon-clock"
+                                    ></use>
+                                </svg>
+                            </div>
+                            <h3 class="section-our-strengths-header">
+                                Lorem ipsum
+                            </h3>
+                            <p class="section-our-strengths-content">
+                                Lorem ipsum dolor sit amet, consectetur
+                                adipiscing elit. Nam vel arcu sem. Sed non
+                                sodales dui. Interdum et malesuada
+                            </p>
+                        </li>
+                        <li class="section-our-strengths-items">
+                            <div class="section-our-strengths-icons flexbox">
+                                <svg width="70" height="70">
+                                    <use
+                                        href="./images/icons.svg#icon-diagram"
+                                    ></use>
+                                </svg>
+                            </div>
+                            <h3 class="section-our-strengths-header">
+                                Lorem ipsum
+                            </h3>
+                            <p class="section-our-strengths-content">
+                                Lorem ipsum dolor sit amet, consectetur
+                                adipiscing elit. Nam vel arcu sem. Sed non
+                                sodales dui. Interdum et malesuada
+                            </p>
+                        </li>
+                        <li class="section-our-strengths-items .item-last">
+                            <div class="section-our-strengths-icons flexbox">
+                                <svg width="70" height="70">
+                                    <use
+                                        href="./images/icons.svg#icon-astronaut"
+                                    ></use>
+                                </svg>
+                            </div>
+                            <h3 class="section-our-strengths-header">
+                                Lorem ipsum
+                            </h3>
+                            <p class="section-our-strengths-content">
+                                Lorem ipsum dolor sit amet, consectetur
+                                adipiscing elit. Nam vel arcu sem. Sed non
+                                sodales dui. Interdum et malesuada
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <section class="section">
+                <!--czym się zajmujemy-->
+                <div class="container flexbox flexbox-column">
+                    <h2 class="section-header section-what-we-do-header">
+                        Czym się zajmujemy
+                    </h2>
+                    <ul class="list-no-marker flexbox">
+                        <li>
+                            <figure class="section-what-we-do-items flexbox">
+                                <!--obrazek1-->
+                                <img
+                                    src="./images/close-up-image-programer-working-his-desk-office_1098-18707.jpg"
+                                    alt="Zbliżenie na programistę pracującego przy swoim biurku"
+                                    height="294"
+                                    width="370"
+                                />
+                                <span
+                                    class="section-what-we-do-items-description flexbox"
+                                >
+                                    Aplikacje komputerowe
+                                </span>
+                            </figure>
+                        </li>
+                        <li>
+                            <figure class="section-what-we-do-items flexbox">
+                                <!--obrazek2-->
+                                <img
+                                    src="./images/web-ui-designers-are-developing-application-smartphones-team-creators-is-working-interface-mobile-phones_8119-2713.jpg"
+                                    alt="Projektant interfejsu internetowego opracowuje aplikację na smartfony"
+                                    height="294"
+                                    width="370"
+                                />
+                                <span
+                                    class="section-what-we-do-items-description flexbox"
+                                >
+                                    Aplikacje mobilne
+                                </span>
+                            </figure>
+                        </li>
+                        <li>
+                            <figure
+                                class="section-what-we-do-items item-last flexbox"
+                            >
+                                <!--obrazek3-->
+                                <img
+                                    src="./images/creative-artist-web-design-with-working-colour-selection-graphic-tablet_35674-1119.jpg"
+                                    alt="Web designer pracuje z tabletem graficznym"
+                                    height="294"
+                                    width="370"
+                                />
+                                <span
+                                    class="section-what-we-do-items-description flexbox"
+                                >
+                                    Rozwiązania graficzne
+                                </span>
+                            </figure>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <section class="section bg-grey">
+                <!--nasz zespół-->
+                <div class="container flexb0x flexbox-column">
+                    <h2 class="section-header section-our-team-header">
+                        Nasz zespół
+                    </h2>
+                    <!--karty postaci-->
+                    <ul class="list-no-marker section-our-team flexbox">
+                        <li>
+                            <figure
+                                class="section-our-team-items card flexbox flexbox-column"
+                            >
+                                <!--karta1-->
+                                <img
+                                    src="./images/product-designer.jpg"
+                                    alt="Product Designer"
+                                    height="260"
+                                    width="270"
+                                />
+                                <figcaption
+                                    class="card-description flexbox flexbox-column"
+                                >
+                                    <h3 class="card-header">Joe Doe</h3>
+                                    <p class="card-content">Product Designer</p>
+                                    <div
+                                        class="section-our-team-icons-box flexbox"
+                                    >
+                                        <a
+                                            class="section-our-team-icons flexbox"
+                                            href="#"
+                                        >
+                                            <svg width="20px" height="20px">
+                                                <use
+                                                    href="./images/icons.svg#icon-instagram"
+                                                ></use>
+                                            </svg>
+                                        </a>
+                                        <a
+                                            class="section-our-team-icons flexbox"
+                                            href="#"
+                                        >
+                                            <svg
+                                                xmlns="http://www.w3.org/2000/svg"
+                                                width="20px"
+                                                height="20px"
+                                            >
+                                                <use
+                                                    href="./images/icons.svg#icon-twitter"
+                                                ></use>
+                                            </svg>
+                                        </a>
+                                        <a
+                                            class="section-our-team-icons flexbox"
+                                            href="#"
+                                        >
+                                            <svg
+                                                xmlns="http://www.w3.org/2000/svg"
+                                                width="20px"
+                                                height="20px"
+                                            >
+                                                <use
+                                                    href="./images/icons.svg#icon-facebook"
+                                                ></use>
+                                            </svg>
+                                        </a>
+                                        <a
+                                            class="section-our-team-icons flexbox"
+                                            href="#"
+                                        >
+                                            <svg
+                                                xmlns="http://www.w3.org/2000/svg"
+                                                width="20px"
+                                                height="20px"
+                                            >
+                                                <use
+                                                    href="./images/icons.svg#icon-linkedin"
+                                                ></use>
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </figcaption>
+                            </figure>
+                        </li>
+                        <li>
+                            <figure
+                                class="section-our-team-items card flexbox flexbox-column"
+                            >
+                                <!--karta2-->
+                                <img
+                                    src="./images/frontend-developer.jpg"
+                                    alt="Frontend Developer"
+                                    height="260"
+                                    width="270"
+                                />
+                                <figcaption
+                                    class="card-description flexbox flexbox-column"
+                                >
+                                    <h3 class="card-header">Joe Doe</h3>
+                                    <p class="card-content">
+                                        Frontend Developer
+                                    </p>
+                                    <div
+                                        class="section-our-team-icons-box flexbox"
+                                    >
+                                        <a
+                                            class="section-our-team-icons flexbox"
+                                            href="#"
+                                        >
+                                            <svg width="20px" height="20px">
+                                                <use
+                                                    href="./images/icons.svg#icon-instagram"
+                                                ></use>
+                                            </svg>
+                                        </a>
+                                        <a
+                                            class="section-our-team-icons flexbox"
+                                            href="#"
+                                        >
+                                            <svg
+                                                xmlns="http://www.w3.org/2000/svg"
+                                                width="20px"
+                                                height="20px"
+                                            >
+                                                <use
+                                                    href="./images/icons.svg#icon-twitter"
+                                                ></use>
+                                            </svg>
+                                        </a>
+                                        <a
+                                            class="section-our-team-icons flexbox"
+                                            href="#"
+                                        >
+                                            <svg
+                                                xmlns="http://www.w3.org/2000/svg"
+                                                width="20px"
+                                                height="20px"
+                                            >
+                                                <use
+                                                    href="./images/icons.svg#icon-facebook"
+                                                ></use>
+                                            </svg>
+                                        </a>
+                                        <a
+                                            class="section-our-team-icons flexbox"
+                                            href="#"
+                                        >
+                                            <svg
+                                                xmlns="http://www.w3.org/2000/svg"
+                                                width="20px"
+                                                height="20px"
+                                            >
+                                                <use
+                                                    href="./images/icons.svg#icon-linkedin"
+                                                ></use>
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </figcaption>
+                            </figure>
+                        </li>
+                        <li>
+                            <figure
+                                class="section-our-team-items card flexbox flexbox-column"
+                            >
+                                <!--karta3-->
+                                <img
+                                    src="./images/marketing.jpg"
+                                    alt="Marketing"
+                                    height="260"
+                                    width="270"
+                                />
+                                <figcaption
+                                    class="card-description flexbox flexbox-column"
+                                >
+                                    <h3 class="card-header">Joe Doe</h3>
+                                    <p class="card-content">Marketing</p>
+                                    <div
+                                        class="section-our-team-icons-box flexbox"
+                                    >
+                                        <a
+                                            class="section-our-team-icons flexbox"
+                                            href="#"
+                                        >
+                                            <svg width="20px" height="20px">
+                                                <use
+                                                    href="./images/icons.svg#icon-instagram"
+                                                ></use>
+                                            </svg>
+                                        </a>
+                                        <a
+                                            class="section-our-team-icons flexbox"
+                                            href="#"
+                                        >
+                                            <svg
+                                                xmlns="http://www.w3.org/2000/svg"
+                                                width="20px"
+                                                height="20px"
+                                            >
+                                                <use
+                                                    href="./images/icons.svg#icon-twitter"
+                                                ></use>
+                                            </svg>
+                                        </a>
+                                        <a
+                                            class="section-our-team-icons flexbox"
+                                            href="#"
+                                        >
+                                            <svg
+                                                xmlns="http://www.w3.org/2000/svg"
+                                                width="20px"
+                                                height="20px"
+                                            >
+                                                <use
+                                                    href="./images/icons.svg#icon-facebook"
+                                                ></use>
+                                            </svg>
+                                        </a>
+                                        <a
+                                            class="section-our-team-icons flexbox"
+                                            href="#"
+                                        >
+                                            <svg
+                                                xmlns="http://www.w3.org/2000/svg"
+                                                width="20px"
+                                                height="20px"
+                                            >
+                                                <use
+                                                    href="./images/icons.svg#icon-linkedin"
+                                                ></use>
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </figcaption>
+                            </figure>
+                        </li>
+                        <li>
+                            <figure
+                                class="section-our-team-items item-last card flexbox flexbox-column"
+                            >
+                                <!--karta4-->
+                                <img
+                                    src="./images/ui-designer.jpg"
+                                    alt="UI Designer"
+                                    height="260"
+                                    width="270"
+                                />
+                                <figcaption
+                                    class="card-description flexbox flexbox-column"
+                                >
+                                    <h3 class="card-header">Joe Doe</h3>
+                                    <p class="card-content">UI Designer</p>
+                                    <div
+                                        class="section-our-team-icons-box flexbox"
+                                    >
+                                        <a
+                                            class="section-our-team-icons flexbox"
+                                            href="#"
+                                        >
+                                            <svg width="20px" height="20px">
+                                                <use
+                                                    href="./images/icons.svg#icon-instagram"
+                                                ></use>
+                                            </svg>
+                                        </a>
+                                        <a
+                                            class="section-our-team-icons flexbox"
+                                            href="#"
+                                        >
+                                            <svg
+                                                xmlns="http://www.w3.org/2000/svg"
+                                                width="20px"
+                                                height="20px"
+                                            >
+                                                <use
+                                                    href="./images/icons.svg#icon-twitter"
+                                                ></use>
+                                            </svg>
+                                        </a>
+                                        <a
+                                            class="section-our-team-icons flexbox"
+                                            href="#"
+                                        >
+                                            <svg
+                                                xmlns="http://www.w3.org/2000/svg"
+                                                width="20px"
+                                                height="20px"
+                                            >
+                                                <use
+                                                    href="./images/icons.svg#icon-facebook"
+                                                ></use>
+                                            </svg>
+                                        </a>
+                                        <a
+                                            class="section-our-team-icons flexbox"
+                                            href="#"
+                                        >
+                                            <svg
+                                                xmlns="http://www.w3.org/2000/svg"
+                                                width="20px"
+                                                height="20px"
+                                            >
+                                                <use
+                                                    href="./images/icons.svg#icon-linkedin"
+                                                ></use>
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </figcaption>
+                            </figure>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <section class="section">
+                <div class="container flexb0x flexbox-column">
+                    <h2 class="section-header section-our-clients">
+                        Nasi klienci
+                    </h2>
+                    <ul
+                        class="section-our-clients-items list-no-marker flexbox"
+                    >
+                        <li>
+                            <div class="section-our-clients-icons flexbox">
+                                <svg width="106" height="60">
+                                    <use
+                                        href="./images/icons.svg#icon-logo1"
+                                    ></use>
+                                </svg>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="section-our-clients-icons flexbox">
+                                <svg width="106" height="60">
+                                    <use
+                                        href="./images/icons.svg#icon-logo2"
+                                    ></use>
+                                </svg>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="section-our-clients-icons flexbox">
+                                <svg width="106" height="60">
+                                    <use
+                                        href="./images/icons.svg#icon-logo3"
+                                    ></use>
+                                </svg>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="section-our-clients-icons flexbox">
+                                <svg width="106" height="60">
+                                    <use
+                                        href="./images/icons.svg#icon-logo4"
+                                    ></use>
+                                </svg>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="section-our-clients-icons flexbox">
+                                <svg width="106" height="60">
+                                    <use
+                                        href="./images/icons.svg#icon-logo5"
+                                    ></use>
+                                </svg>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="section-our-clients-icons flexbox">
+                                <svg width="106" height="60">
+                                    <use
+                                        href="./images/icons.svg#icon-logo6"
+                                    ></use>
+                                </svg>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+        </main>
+        <footer class="footer flexbox bg-dark">
+            <!--stopka-->
+            <div class="container footer-container flexbox">
+                <div class="footer-container_main flexbox">
+                    <div>
+                        <p class="logo logo-footer">
+                            <span class="logo-blue">Web</span>Studio
+                        </p>
+                        <address class="footer-address">
+                            <p class="footer-address-main">
+                                m. Warszawa, Aleje Jerozolimskie 21
+                            </p>
+                            <p class="footer-address-secondary">
+                                info@example.com
+                            </p>
+                            <p class="footer-address-secondary">
+                                +48 111 111 111
+                            </p>
+                        </address>
+                    </div>
+                    <div>
+                        <p class="header-join">dołącz do nas</p>
+                        <div class="box-join flexbox">
+                            <a href="#" class="join-icon flexbox">
+                                <svg width="20px" height="20px">
+                                    <use
+                                        href="./images/icons.svg#icon-instagram"
+                                    ></use>
+                                </svg>
+                            </a>
+                            <a href="#" class="join-icon flexbox">
+                                <svg width="20px" height="20px">
+                                    <use
+                                        href="./images/icons.svg#icon-twitter"
+                                    ></use>
+                                </svg>
+                            </a>
+                            <a href="#" class="join-icon flexbox">
+                                <svg width="20px" height="20px">
+                                    <use
+                                        href="./images/icons.svg#icon-facebook"
+                                    ></use>
+                                </svg>
+                            </a>
+                            <a href="#" class="join-icon flexbox">
+                                <svg width="20px" height="20px">
+                                    <use
+                                        href="./images/icons.svg#icon-linkedin"
+                                    ></use>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="newsletter-box flexbox flexbox-column">
+                    <h3 class="newsletter_header">Zapisz się do newslettera</h3>
+                    <div class="newsletter-wrapper flexbox">
+                        <form>
+                            <label>
+                                <input
+                                    type="email"
+                                    name="newsletter-email"
+                                    placeholder="E-mail"
+                                    class="newsletter_input"
+                                />
+                            </label>
+                        </form>
+                        <button
+                            type="submit"
+                            class="button button_newsletter flexbox"
+                        >
+                            Zapisz się
+                            <svg width="24px" height="24px">
+                                <use href="./images/icons.svg#icon-send"></use>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!--modal START-->
+        <div data-modal class="backdrop is-hidden flexbox">
+            <div class="modal">
+                <button
+                    data-modal-close
+                    type="button"
+                    class="modal-button flexbox"
+                >
+                    <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="18px"
+                        height="18px"
+                    >
+                        <use href="./images/icons.svg#icon-close"></use>
+                    </svg>
+                </button>
+                <div>
+                    <h3 class="form-header">
+                        Zostaw swoje dane w formularzu poniżej
+                    </h3>
+                    <form name="form-contact" class="form">
+                        <label class="form-item"
+                            >Imie
+                            <div class="form-box">
+                                <input name="name" class="form-item_input" />
+                                <svg
+                                    width="18px"
+                                    height="18px"
+                                    class="form-item_icon"
+                                >
+                                    <use
+                                        href="./images/icons.svg#icon-person-black"
+                                    ></use>
+                                </svg>
+                            </div>
+                        </label>
+                        <label class="form-item"
+                            >Telefon
+                            <div class="form-box">
+                                <input
+                                    type="tel"
+                                    name="tel"
+                                    class="form-item_input"
+                                />
+                                <svg
+                                    width="18px"
+                                    height="18px"
+                                    class="form-item_icon"
+                                >
+                                    <use
+                                        href="./images/icons.svg#icon-phone-black"
+                                    ></use>
+                                </svg>
+                            </div>
+                        </label>
+                        <label class="form-item"
+                            >Email
+                            <div class="form-box">
+                                <input
+                                    type="email"
+                                    name="email"
+                                    class="form-item_input"
+                                />
+                                <svg
+                                    width="18px"
+                                    height="18px"
+                                    class="form-item_icon"
+                                >
+                                    <use
+                                        href="./images/icons.svg#icon-email-black"
+                                    ></use>
+                                </svg></div
+                        ></label>
+                        <label class="form-item"
+                            >Komentarz
+                            <textarea
+                                name="coments"
+                                placeholder="Wprowadź tekst"
+                                class="form-item_coments"
+                            ></textarea>
+                        </label>
+                    </form>
+                    <div class="form_checkbox flexbox">
+                        <div class="checkbox-wrapper">
+                            <label>
+                                <input
+                                    type="checkbox"
+                                    name="checkbox"
+                                    class="checkbox"
+                                />
+                                <span>
+                                    <svg width="16px" height="15px">
+                                        <use
+                                            href="./images/icons.svg#icon-unchecked"
+                                        ></use>
+                                    </svg>
+                                </span>
+                                <span class="checkmark-checked"
+                                    ><svg width="16px" height="15px">
+                                        <use
+                                            href="./images/icons.svg#icon-checked"
+                                        ></use>
+                                    </svg>
+                                </span>
+                            </label>
+                        </div>
+                        <label>
+                            Oświadczam iż akceptuję
+                            <a class="checkbox-link" href="">Regulamin</a> i
+                            <a class="checkbox-link" href=""
+                                >Politykę Prywatności.</a
+                            >
+                        </label>
+                    </div>
+                    <button type="submit" class="button button_form flexbox">
+                        Wyślij
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!--modal END-->
+        <!--js scripts-->
+        <script src="./js/modal.js"></script>
+    </body>
+</html>
