@@ -5,11 +5,10 @@
         url(../images/hero-section-bg.jpg);
     background-position: center;
     background-repeat: no-repeat;
-}
-
-.hero_wrapper {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 30px;
+    &__wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
 }

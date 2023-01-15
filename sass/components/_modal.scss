@@ -72,16 +72,25 @@
         &:focus {
             border-color: var(--main-blue);
         }
-        &:focus + .modal-icon {
+        &:focus + .modal__icon {
             fill: var(--main-blue);
         }
     }
-    &__form-coments-wrapper {
+    &__icon {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 12px;
+        transition-property: fill;
+        transition-duration: $transition-duration;
+        transition-timing-function: $transition-timing-function;
+    }
+    &__form-comments-wrapper {
         display: flex;
         flex-direction: column;
         gap: 4px;
     }
-    &__form-coments {
+    &__form-comments {
         height: 120px;
         width: 100%;
         resize: none;

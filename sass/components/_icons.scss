@@ -1,13 +1,3 @@
-.our-strengths-icon {
-    display: flex;
-    background: var(--button-color);
-    border-radius: 4px;
-    width: 270px;
-    height: 120px;
-    align-items: center;
-    justify-content: center;
-}
-
 .media-icon {
     width: 44px;
     height: 44px;
@@ -38,34 +28,4 @@
         fill: var(--main-white);
         cursor: pointer;
     }
-}
-
-.clients-icon {
-    display: flex;
-    border: solid 1px var(--icon-unactive);
-    border-radius: 4px;
-    fill: var(--icon-unactive);
-    width: 170px;
-    height: 92px;
-    align-items: center;
-    justify-content: center;
-    transition-property: fill;
-    transition-duration: $transition-duration;
-    transition-timing-function: $transition-timing-function;
-    &:hover,
-    &:focus {
-        fill: var(--main-blue);
-        border: 1px solid var(--main-blue);
-        cursor: pointer;
-    }
-}
-
-.modal-icon {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    left: 12px;
-    transition-property: fill;
-    transition-duration: $transition-duration;
-    transition-timing-function: $transition-timing-function;
 }
