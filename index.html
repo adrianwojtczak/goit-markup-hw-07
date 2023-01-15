@@ -5,7 +5,7 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Zadanie domowe dla studentów #6</title>
+        <title>Zadanie domowe dla studentów #7</title>
 
         <!--Google fonts START-->
         <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -18,145 +18,135 @@
 
         <link href="./css/modern-normalize.css" rel="stylesheet" />
         <link href="./css/styles.css" rel="stylesheet" />
+        <link href="./css/main.min.css" rel="stylesheet" />
     </head>
     <body>
-        <header class="header">
-            <div class="container flexbox flexbox-header">
+        <header class="page-header">
+            <div class="container page-header__wrapper">
                 <!--menu-->
-                <div class="flexbox flexbox-header">
-                    <p class="logo logo-header">
-                        <span class="logo-blue">Web</span>Studio
-                    </p>
-                    <nav>
-                        <!--Menu nav-->
-                        <ul
-                            class="nav-menu-header list-no-marker flexbox flexbox-header"
-                        >
-                            <li>
-                                <a class="active current-page" href="index.html"
-                                    >Agencja</a
-                                >
-                            </li>
-                            <li>
-                                <a class="active" href="portfolio.html"
-                                    >Portfolio</a
-                                >
-                            </li>
-                            <li><a class="active" href="">Kontakt</a></li>
-                        </ul>
-                    </nav>
-                </div>
-                <div class="flexbox flexbox-header flexbox-header-contact">
-                    <div>
-                        <a
-                            class="contact active flexbox flexbox-contact"
-                            href="mailto:info@devstudio.com"
-                            ><svg width="16" height="12">
-                                <use
-                                    href="./images/icons.svg#icon-envelope"
-                                ></use>
-                            </svg>
-                            info@devstudio.com</a
-                        >
-                    </div>
-                    <div>
-                        <a
-                            class="contact active flexbox flexbox-contact"
-                            href="tel:+48111111111"
-                            ><svg width="10" height="16">
-                                <use
-                                    href="./images/icons.svg#icon-smartphone"
-                                ></use>
-                            </svg>
-                            +48 111 111 111</a
-                        >
-                    </div>
+                <p class="logo">
+                    Web
+                    <span class="logo__header">Studio</span>
+                </p>
+                <nav>
+                    <!--Menu nav-->
+                    <ul class="page-header__nav">
+                        <li>
+                            <a
+                                class="page-header__nav-item current-page"
+                                href="index.html"
+                                >Agencja</a
+                            >
+                        </li>
+                        <li>
+                            <a
+                                class="page-header__nav-item"
+                                href="portfolio.html"
+                                >Portfolio</a
+                            >
+                        </li>
+                        <li>
+                            <a class="page-header__nav-item" href="">Kontakt</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="page-header__contacts">
+                    <a
+                        class="page-header__contacts-item"
+                        href="mailto:info@devstudio.com"
+                        ><svg width="16" height="12">
+                            <use href="./images/icons.svg#icon-envelope"></use>
+                        </svg>
+                        info@devstudio.com</a
+                    >
+                    <a
+                        class="page-header__contacts-item"
+                        href="tel:+48111111111"
+                        ><svg width="10" height="16">
+                            <use
+                                href="./images/icons.svg#icon-smartphone"
+                            ></use>
+                        </svg>
+                        +48 111 111 111</a
+                    >
                 </div>
             </div>
         </header>
         <main>
-            <section class="section hero-section bg-hero">
+            <section class="section hero">
                 <!--nagłówek z przyciskiem-->
-                <div class="container flexbox flexbox-column">
-                    <h1 class="section-header header-main">
+                <div class="container hero_wrapper">
+                    <h1 class="section-header section-header--hero">
                         Efektywne rozwiązania dla waszego biznesu
                     </h1>
                     <button
                         data-modal-open
                         type="button"
-                        class="button button-main"
+                        class="button button--hero"
                     >
                         Zamów usługe
                     </button>
                 </div>
             </section>
-            <section class="section section-our-strengths">
+            <section class="section our-strengths">
                 <div class="container">
-                    <ul class="list-no-marker flexbox">
+                    <ul class="our-strengths_wrapper">
                         <!--nasze atrybuty-->
-                        <li class="section-our-strengths-items">
-                            <div class="section-our-strengths-icons flexbox">
+                        <li class="our-strengths_item">
+                            <div class="our-strengths-icon">
                                 <svg width="70" height="70">
                                     <use
                                         href="./images/icons.svg#icon-antenna"
                                     ></use>
                                 </svg>
                             </div>
-                            <h3 class="section-our-strengths-header">
-                                Lorem ipsum
-                            </h3>
-                            <p class="section-our-strengths-content">
+                            <h3 class="our-strengths_header">Lorem ipsum</h3>
+                            <p class="our-strengths_content">
                                 Lorem ipsum dolor sit amet, consectetur
                                 adipiscing elit. Nam vel arcu sem. Sed non
                                 sodales dui. Interdum et malesuada
                             </p>
                         </li>
-                        <li class="section-our-strengths-items">
-                            <div class="section-our-strengths-icons flexbox">
+                        <li class="our-strengths_item">
+                            <div class="our-strengths-icon">
                                 <svg width="70" height="70">
                                     <use
                                         href="./images/icons.svg#icon-clock"
                                     ></use>
                                 </svg>
                             </div>
-                            <h3 class="section-our-strengths-header">
-                                Lorem ipsum
-                            </h3>
-                            <p class="section-our-strengths-content">
+                            <h3 class="our-strengths_header">Lorem ipsum</h3>
+                            <p class="our-strengths_content">
                                 Lorem ipsum dolor sit amet, consectetur
                                 adipiscing elit. Nam vel arcu sem. Sed non
                                 sodales dui. Interdum et malesuada
                             </p>
                         </li>
-                        <li class="section-our-strengths-items">
-                            <div class="section-our-strengths-icons flexbox">
+                        <li class="our-strengths_item">
+                            <div class="our-strengths-icon">
                                 <svg width="70" height="70">
                                     <use
                                         href="./images/icons.svg#icon-diagram"
                                     ></use>
                                 </svg>
                             </div>
-                            <h3 class="section-our-strengths-header">
-                                Lorem ipsum
-                            </h3>
-                            <p class="section-our-strengths-content">
+                            <h3 class="our-strengths_header">Lorem ipsum</h3>
+                            <p class="our-strengths_content">
                                 Lorem ipsum dolor sit amet, consectetur
                                 adipiscing elit. Nam vel arcu sem. Sed non
                                 sodales dui. Interdum et malesuada
                             </p>
                         </li>
-                        <li class="section-our-strengths-items .item-last">
-                            <div class="section-our-strengths-icons flexbox">
+                        <li class="our-strengths_item">
+                            <div class="our-strengths-icon">
                                 <svg width="70" height="70">
                                     <use
                                         href="./images/icons.svg#icon-astronaut"
                                     ></use>
                                 </svg>
                             </div>
-                            <h3 class="section-our-strengths-header">
-                                Lorem ipsum
-                            </h3>
-                            <p class="section-our-strengths-content">
+                            <h3 class="our-strengths_header">Lorem ipsum</h3>
+                            <p class="our-strengths_content">
                                 Lorem ipsum dolor sit amet, consectetur
                                 adipiscing elit. Nam vel arcu sem. Sed non
                                 sodales dui. Interdum et malesuada
@@ -167,13 +157,11 @@
             </section>
             <section class="section">
                 <!--czym się zajmujemy-->
-                <div class="container flexbox flexbox-column">
-                    <h2 class="section-header section-what-we-do-header">
-                        Czym się zajmujemy
-                    </h2>
-                    <ul class="list-no-marker flexbox">
+                <div class="container what-we-do">
+                    <h2 class="section-header">Czym się zajmujemy</h2>
+                    <ul class="what-we-do__wrapper">
                         <li>
-                            <figure class="section-what-we-do-items flexbox">
+                            <figure class="what-we-do__item">
                                 <!--obrazek1-->
                                 <img
                                     src="./images/close-up-image-programer-working-his-desk-office_1098-18707.jpg"
@@ -181,15 +169,13 @@
                                     height="294"
                                     width="370"
                                 />
-                                <span
-                                    class="section-what-we-do-items-description flexbox"
-                                >
+                                <span class="what-we-do__description">
                                     Aplikacje komputerowe
                                 </span>
                             </figure>
                         </li>
                         <li>
-                            <figure class="section-what-we-do-items flexbox">
+                            <figure class="what-we-do__item">
                                 <!--obrazek2-->
                                 <img
                                     src="./images/web-ui-designers-are-developing-application-smartphones-team-creators-is-working-interface-mobile-phones_8119-2713.jpg"
@@ -197,17 +183,13 @@
                                     height="294"
                                     width="370"
                                 />
-                                <span
-                                    class="section-what-we-do-items-description flexbox"
-                                >
+                                <span class="what-we-do__description">
                                     Aplikacje mobilne
                                 </span>
                             </figure>
                         </li>
                         <li>
-                            <figure
-                                class="section-what-we-do-items item-last flexbox"
-                            >
+                            <figure class="what-we-do__item">
                                 <!--obrazek3-->
                                 <img
                                     src="./images/creative-artist-web-design-with-working-colour-selection-graphic-tablet_35674-1119.jpg"
@@ -215,9 +197,7 @@
                                     height="294"
                                     width="370"
                                 />
-                                <span
-                                    class="section-what-we-do-items-description flexbox"
-                                >
+                                <span class="what-we-do__description">
                                     Rozwiązania graficzne
                                 </span>
                             </figure>
@@ -225,18 +205,14 @@
                     </ul>
                 </div>
             </section>
-            <section class="section bg-grey">
+            <section class="section team">
                 <!--nasz zespół-->
-                <div class="container flexb0x flexbox-column">
-                    <h2 class="section-header section-our-team-header">
-                        Nasz zespół
-                    </h2>
+                <div class="container team__wrapper">
+                    <h2 class="section-header">Nasz zespół</h2>
                     <!--karty postaci-->
-                    <ul class="list-no-marker section-our-team flexbox">
+                    <ul class="team__cards">
                         <li>
-                            <figure
-                                class="section-our-team-items card flexbox flexbox-column"
-                            >
+                            <figure class="team__cards-item">
                                 <!--karta1-->
                                 <img
                                     src="./images/product-designer.jpg"
@@ -244,16 +220,14 @@
                                     height="260"
                                     width="270"
                                 />
-                                <figcaption
-                                    class="card-description flexbox flexbox-column"
-                                >
-                                    <h3 class="card-header">Joe Doe</h3>
-                                    <p class="card-content">Product Designer</p>
-                                    <div
-                                        class="section-our-team-icons-box flexbox"
-                                    >
+                                <figcaption class="team__cards-description">
+                                    <h3 class="team__cards-header">Joe Doe</h3>
+                                    <p class="team__cards-content">
+                                        Product Designer
+                                    </p>
+                                    <div class="team__icons-wrapper">
                                         <a
-                                            class="section-our-team-icons flexbox"
+                                            class="media-icon media-icon--team"
                                             href="#"
                                         >
                                             <svg width="20px" height="20px">
@@ -263,7 +237,7 @@
                                             </svg>
                                         </a>
                                         <a
-                                            class="section-our-team-icons flexbox"
+                                            class="media-icon media-icon--team"
                                             href="#"
                                         >
                                             <svg
@@ -277,7 +251,7 @@
                                             </svg>
                                         </a>
                                         <a
-                                            class="section-our-team-icons flexbox"
+                                            class="media-icon media-icon--team"
                                             href="#"
                                         >
                                             <svg
@@ -291,7 +265,7 @@
                                             </svg>
                                         </a>
                                         <a
-                                            class="section-our-team-icons flexbox"
+                                            class="media-icon media-icon--team"
                                             href="#"
                                         >
                                             <svg
@@ -309,9 +283,7 @@
                             </figure>
                         </li>
                         <li>
-                            <figure
-                                class="section-our-team-items card flexbox flexbox-column"
-                            >
+                            <figure class="team__cards-item">
                                 <!--karta2-->
                                 <img
                                     src="./images/frontend-developer.jpg"
@@ -319,18 +291,14 @@
                                     height="260"
                                     width="270"
                                 />
-                                <figcaption
-                                    class="card-description flexbox flexbox-column"
-                                >
-                                    <h3 class="card-header">Joe Doe</h3>
-                                    <p class="card-content">
+                                <figcaption class="team__cards-description">
+                                    <h3 class="team__cards-header">Joe Doe</h3>
+                                    <p class="team__cards-content">
                                         Frontend Developer
                                     </p>
-                                    <div
-                                        class="section-our-team-icons-box flexbox"
-                                    >
+                                    <div class="team__icons-wrapper">
                                         <a
-                                            class="section-our-team-icons flexbox"
+                                            class="media-icon media-icon--team"
                                             href="#"
                                         >
                                             <svg width="20px" height="20px">
@@ -340,7 +308,7 @@
                                             </svg>
                                         </a>
                                         <a
-                                            class="section-our-team-icons flexbox"
+                                            class="media-icon media-icon--team"
                                             href="#"
                                         >
                                             <svg
@@ -354,7 +322,7 @@
                                             </svg>
                                         </a>
                                         <a
-                                            class="section-our-team-icons flexbox"
+                                            class="media-icon media-icon--team"
                                             href="#"
                                         >
                                             <svg
@@ -368,7 +336,7 @@
                                             </svg>
                                         </a>
                                         <a
-                                            class="section-our-team-icons flexbox"
+                                            class="media-icon media-icon--team"
                                             href="#"
                                         >
                                             <svg
@@ -386,9 +354,7 @@
                             </figure>
                         </li>
                         <li>
-                            <figure
-                                class="section-our-team-items card flexbox flexbox-column"
-                            >
+                            <figure class="team__cards-item">
                                 <!--karta3-->
                                 <img
                                     src="./images/marketing.jpg"
@@ -396,16 +362,12 @@
                                     height="260"
                                     width="270"
                                 />
-                                <figcaption
-                                    class="card-description flexbox flexbox-column"
-                                >
-                                    <h3 class="card-header">Joe Doe</h3>
-                                    <p class="card-content">Marketing</p>
-                                    <div
-                                        class="section-our-team-icons-box flexbox"
-                                    >
+                                <figcaption class="team__cards-description">
+                                    <h3 class="team__cards-header">Joe Doe</h3>
+                                    <p class="team__cards-content">Marketing</p>
+                                    <div class="team__icons-wrapper">
                                         <a
-                                            class="section-our-team-icons flexbox"
+                                            class="media-icon media-icon--team"
                                             href="#"
                                         >
                                             <svg width="20px" height="20px">
@@ -415,7 +377,7 @@
                                             </svg>
                                         </a>
                                         <a
-                                            class="section-our-team-icons flexbox"
+                                            class="media-icon media-icon--team"
                                             href="#"
                                         >
                                             <svg
@@ -429,7 +391,7 @@
                                             </svg>
                                         </a>
                                         <a
-                                            class="section-our-team-icons flexbox"
+                                            class="media-icon media-icon--team"
                                             href="#"
                                         >
                                             <svg
@@ -443,7 +405,7 @@
                                             </svg>
                                         </a>
                                         <a
-                                            class="section-our-team-icons flexbox"
+                                            class="media-icon media-icon--team"
                                             href="#"
                                         >
                                             <svg
@@ -461,9 +423,7 @@
                             </figure>
                         </li>
                         <li>
-                            <figure
-                                class="section-our-team-items item-last card flexbox flexbox-column"
-                            >
+                            <figure class="team__cards-item">
                                 <!--karta4-->
                                 <img
                                     src="./images/ui-designer.jpg"
@@ -471,16 +431,14 @@
                                     height="260"
                                     width="270"
                                 />
-                                <figcaption
-                                    class="card-description flexbox flexbox-column"
-                                >
-                                    <h3 class="card-header">Joe Doe</h3>
-                                    <p class="card-content">UI Designer</p>
-                                    <div
-                                        class="section-our-team-icons-box flexbox"
-                                    >
+                                <figcaption class="cteam__cards-description">
+                                    <h3 class="team__cards-header">Joe Doe</h3>
+                                    <p class="team__cards-content">
+                                        UI Designer
+                                    </p>
+                                    <div class="team__icons-wrapper">
                                         <a
-                                            class="section-our-team-icons flexbox"
+                                            class="media-icon media-icon--team"
                                             href="#"
                                         >
                                             <svg width="20px" height="20px">
@@ -490,7 +448,7 @@
                                             </svg>
                                         </a>
                                         <a
-                                            class="section-our-team-icons flexbox"
+                                            class="media-icon media-icon--team"
                                             href="#"
                                         >
                                             <svg
@@ -504,7 +462,7 @@
                                             </svg>
                                         </a>
                                         <a
-                                            class="section-our-team-icons flexbox"
+                                            class="media-icon media-icon--team"
                                             href="#"
                                         >
                                             <svg
@@ -518,7 +476,7 @@
                                             </svg>
                                         </a>
                                         <a
-                                            class="section-our-team-icons flexbox"
+                                            class="media-icon media-icon--team"
                                             href="#"
                                         >
                                             <svg
@@ -539,15 +497,11 @@
                 </div>
             </section>
             <section class="section">
-                <div class="container flexb0x flexbox-column">
-                    <h2 class="section-header section-our-clients">
-                        Nasi klienci
-                    </h2>
-                    <ul
-                        class="section-our-clients-items list-no-marker flexbox"
-                    >
+                <div class="container clients">
+                    <h2 class="section-header">Nasi klienci</h2>
+                    <ul class="clients__items">
                         <li>
-                            <div class="section-our-clients-icons flexbox">
+                            <div class="clients-icon">
                                 <svg width="106" height="60">
                                     <use
                                         href="./images/icons.svg#icon-logo1"
@@ -556,7 +510,7 @@
                             </div>
                         </li>
                         <li>
-                            <div class="section-our-clients-icons flexbox">
+                            <div class="clients-icon">
                                 <svg width="106" height="60">
                                     <use
                                         href="./images/icons.svg#icon-logo2"
@@ -565,7 +519,7 @@
                             </div>
                         </li>
                         <li>
-                            <div class="section-our-clients-icons flexbox">
+                            <div class="clients-icon">
                                 <svg width="106" height="60">
                                     <use
                                         href="./images/icons.svg#icon-logo3"
@@ -574,7 +528,7 @@
                             </div>
                         </li>
                         <li>
-                            <div class="section-our-clients-icons flexbox">
+                            <div class="clients-icon">
                                 <svg width="106" height="60">
                                     <use
                                         href="./images/icons.svg#icon-logo4"
@@ -583,7 +537,7 @@
                             </div>
                         </li>
                         <li>
-                            <div class="section-our-clients-icons flexbox">
+                            <div class="clients-icon">
                                 <svg width="106" height="60">
                                     <use
                                         href="./images/icons.svg#icon-logo5"
@@ -592,7 +546,7 @@
                             </div>
                         </li>
                         <li>
-                            <div class="section-our-clients-icons flexbox">
+                            <div class="clients-icon">
                                 <svg width="106" height="60">
                                     <use
                                         href="./images/icons.svg#icon-logo6"
@@ -604,94 +558,89 @@
                 </div>
             </section>
         </main>
-        <footer class="footer flexbox bg-dark">
+        <footer class="page-footer">
             <!--stopka-->
-            <div class="container footer-container flexbox">
-                <div class="footer-container_main flexbox">
-                    <div>
-                        <p class="logo logo-footer">
-                            <span class="logo-blue">Web</span>Studio
+            <div class="container page-footer__wrapper">
+                <div>
+                    <p class="logo page-footer__logo">
+                        Web
+                        <span class="logo__footer">Studio</span>
+                    </p>
+                    <address class="page-footer__address">
+                        <p class="page-footer__address-primary">
+                            m. Warszawa, Aleje Jerozolimskie 21
                         </p>
-                        <address class="footer-address">
-                            <p class="footer-address-main">
-                                m. Warszawa, Aleje Jerozolimskie 21
-                            </p>
-                            <p class="footer-address-secondary">
-                                info@example.com
-                            </p>
-                            <p class="footer-address-secondary">
-                                +48 111 111 111
-                            </p>
-                        </address>
-                    </div>
-                    <div>
-                        <p class="header-join">dołącz do nas</p>
-                        <div class="box-join flexbox">
-                            <a href="#" class="join-icon flexbox">
-                                <svg width="20px" height="20px">
-                                    <use
-                                        href="./images/icons.svg#icon-instagram"
-                                    ></use>
-                                </svg>
-                            </a>
-                            <a href="#" class="join-icon flexbox">
-                                <svg width="20px" height="20px">
-                                    <use
-                                        href="./images/icons.svg#icon-twitter"
-                                    ></use>
-                                </svg>
-                            </a>
-                            <a href="#" class="join-icon flexbox">
-                                <svg width="20px" height="20px">
-                                    <use
-                                        href="./images/icons.svg#icon-facebook"
-                                    ></use>
-                                </svg>
-                            </a>
-                            <a href="#" class="join-icon flexbox">
-                                <svg width="20px" height="20px">
-                                    <use
-                                        href="./images/icons.svg#icon-linkedin"
-                                    ></use>
-                                </svg>
-                            </a>
-                        </div>
+                        <p class="page-footer__address-secondary">
+                            info@example.com
+                        </p>
+                        <p class="page-footer__address-secondary">
+                            +48 111 111 111
+                        </p>
+                    </address>
+                </div>
+                <div>
+                    <p class="page-footer__join-header">dołącz do nas</p>
+                    <div class="page-footer__join-icons">
+                        <a href="#" class="media-icon media-icon--footer">
+                            <svg width="20px" height="20px">
+                                <use
+                                    href="./images/icons.svg#icon-instagram"
+                                ></use>
+                            </svg>
+                        </a>
+                        <a href="#" class="media-icon media-icon--footer">
+                            <svg width="20px" height="20px">
+                                <use
+                                    href="./images/icons.svg#icon-twitter"
+                                ></use>
+                            </svg>
+                        </a>
+                        <a href="#" class="media-icon media-icon--footer">
+                            <svg width="20px" height="20px">
+                                <use
+                                    href="./images/icons.svg#icon-facebook"
+                                ></use>
+                            </svg>
+                        </a>
+                        <a href="#" class="media-icon media-icon--footer">
+                            <svg width="20px" height="20px">
+                                <use
+                                    href="./images/icons.svg#icon-linkedin"
+                                ></use>
+                            </svg>
+                        </a>
                     </div>
                 </div>
-                <div class="newsletter-box flexbox flexbox-column">
-                    <h3 class="newsletter_header">Zapisz się do newslettera</h3>
-                    <div class="newsletter-wrapper flexbox">
-                        <form>
-                            <label>
-                                <input
-                                    type="email"
-                                    name="newsletter-email"
-                                    placeholder="E-mail"
-                                    class="newsletter_input"
-                                />
-                            </label>
-                        </form>
-                        <button
-                            type="submit"
-                            class="button button_newsletter flexbox"
-                        >
+                <form class="page-footer__newsletter">
+                    <label
+                        for="newsletter"
+                        class="page-footer__newsletter-header"
+                        >Zapisz się do newslettera
+                    </label>
+                    <div class="page-footer__newsletter-wrapper">
+                        <label>
+                            <input
+                                type="email"
+                                name="newsletter-email"
+                                placeholder="E-mail"
+                                class="page-footer__newsletter-input"
+                                id="newsletter"
+                            />
+                        </label>
+                        <button type="submit" class="button button--newsletter">
                             Zapisz się
                             <svg width="24px" height="24px">
                                 <use href="./images/icons.svg#icon-send"></use>
                             </svg>
                         </button>
                     </div>
-                </div>
+                </form>
             </div>
         </footer>
         <!--modal START-->
-        <div data-modal class="backdrop is-hidden flexbox">
+        <div data-modal class="backdrop is-hidden">
             <div class="modal">
-                <button
-                    data-modal-close
-                    type="button"
-                    class="modal-button flexbox"
-                >
+                <button data-modal-close type="button" class="modal__button">
                     <svg
                         xmlns="http://www.w3.org/2000/svg"
                         width="18px"
@@ -701,78 +650,67 @@
                     </svg>
                 </button>
                 <div>
-                    <h3 class="form-header">
+                    <h3 class="modal__header">
                         Zostaw swoje dane w formularzu poniżej
                     </h3>
-                    <form name="form-contact" class="form">
-                        <label class="form-item"
-                            >Imie
-                            <div class="form-box">
-                                <input name="name" class="form-item_input" />
-                                <svg
-                                    width="18px"
-                                    height="18px"
-                                    class="form-item_icon"
-                                >
-                                    <use
-                                        href="./images/icons.svg#icon-person-black"
-                                    ></use>
-                                </svg>
-                            </div>
-                        </label>
-                        <label class="form-item"
-                            >Telefon
-                            <div class="form-box">
-                                <input
-                                    type="tel"
-                                    name="tel"
-                                    class="form-item_input"
-                                />
-                                <svg
-                                    width="18px"
-                                    height="18px"
-                                    class="form-item_icon"
-                                >
-                                    <use
-                                        href="./images/icons.svg#icon-phone-black"
-                                    ></use>
-                                </svg>
-                            </div>
-                        </label>
-                        <label class="form-item"
-                            >Email
-                            <div class="form-box">
-                                <input
-                                    type="email"
-                                    name="email"
-                                    class="form-item_input"
-                                />
-                                <svg
-                                    width="18px"
-                                    height="18px"
-                                    class="form-item_icon"
-                                >
-                                    <use
-                                        href="./images/icons.svg#icon-email-black"
-                                    ></use>
-                                </svg></div
-                        ></label>
-                        <label class="form-item"
-                            >Komentarz
+                    <form name="form-contact" class="modal__form">
+                        <label for="input-name">Imie</label>
+                        <div class="modal__form-item">
+                            <input
+                                name="name"
+                                class="modal__form-input"
+                                id="input-name"
+                            />
+                            <svg width="18px" height="18px" class="modal-icon">
+                                <use
+                                    href="./images/icons.svg#icon-person-black"
+                                ></use>
+                            </svg>
+                        </div>
+                        <label for="input-tel">Telefon</label>
+                        <div class="modal__form-item">
+                            <input
+                                type="tel"
+                                name="tel"
+                                class="modal__form-input"
+                                id="input-tel"
+                            />
+                            <svg width="18px" height="18px" class="modal-icon">
+                                <use
+                                    href="./images/icons.svg#icon-phone-black"
+                                ></use>
+                            </svg>
+                        </div>
+                        <label for="input-email">Email</label>
+                        <div class="modal__form-item">
+                            <input
+                                type="email"
+                                name="email"
+                                class="modal__form-input"
+                                id="input-email"
+                            />
+                            <svg width="18px" height="18px" class="modal-icon">
+                                <use
+                                    href="./images/icons.svg#icon-email-black"
+                                ></use>
+                            </svg>
+                        </div>
+                        <label class="modal__form-coments-wrapper">
+                            <span>Komentarz</span>
                             <textarea
                                 name="coments"
                                 placeholder="Wprowadź tekst"
-                                class="form-item_coments"
+                                class="modal__form-coments"
                             ></textarea>
                         </label>
                     </form>
-                    <div class="form_checkbox flexbox">
-                        <div class="checkbox-wrapper">
+                    <div class="modal__accept">
+                        <div class="modal__checkbox-wrapper">
                             <label>
                                 <input
                                     type="checkbox"
                                     name="checkbox"
-                                    class="checkbox"
+                                    class="modal__checkbox"
                                 />
                                 <span>
                                     <svg width="16px" height="15px">
@@ -781,7 +719,7 @@
                                         ></use>
                                     </svg>
                                 </span>
-                                <span class="checkmark-checked"
+                                <span class="modal__checkmark-checked"
                                     ><svg width="16px" height="15px">
                                         <use
                                             href="./images/icons.svg#icon-checked"
@@ -790,15 +728,15 @@
                                 </span>
                             </label>
                         </div>
-                        <label>
+                        <div>
                             Oświadczam iż akceptuję
-                            <a class="checkbox-link" href="">Regulamin</a> i
-                            <a class="checkbox-link" href=""
+                            <a class="modal__link" href="">Regulamin</a> i
+                            <a class="modal__link" href=""
                                 >Politykę Prywatności.</a
                             >
-                        </label>
+                        </div>
                     </div>
-                    <button type="submit" class="button button_form flexbox">
+                    <button type="submit" class="button button--form">
                         Wyślij
                     </button>
                 </div>

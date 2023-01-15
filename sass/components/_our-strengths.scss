@@ -1,0 +1,25 @@
+.our-strengths {
+    font-size: 14px;
+    padding-bottom: 0px;
+}
+
+.our-strengths_wrapper {
+    display: flex;
+    gap: 0 30px;
+    list-style-type: none;
+}
+
+.our-strengths_item {
+    max-width: 270px;
+}
+
+.our-strengths_header {
+    font-weight: 700;
+    line-height: 1.14;
+    margin: 30px 0 10px;
+}
+
+.our-strengths_content {
+    color: var(--main-grey);
+    line-height: 1.71;
+}
