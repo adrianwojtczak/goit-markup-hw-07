@@ -31,6 +31,21 @@
             color: var(--main-blue);
             fill: var(--main-blue);
         }
+        &--current-page {
+            position: relative;
+            color: var(--main-blue);
+            &::after {
+                content: '';
+                display: flex;
+                justify-content: center;
+                position: absolute;
+                top: 45px;
+                width: 100%;
+                height: 4px;
+                border-radius: 2px;
+                background-color: var(--main-blue);
+            }
+        }
     }
     &__contacts {
         display: flex;
@@ -53,21 +68,5 @@
             color: var(--main-blue);
             fill: var(--main-blue);
         }
-    }
-}
-
-.current-page {
-    position: relative;
-    color: var(--main-blue);
-    &::after {
-        content: '';
-        display: flex;
-        justify-content: center;
-        position: absolute;
-        top: 45px;
-        width: 100%;
-        height: 4px;
-        border-radius: 2px;
-        background-color: var(--main-blue);
     }
 }
